@@ -10,7 +10,7 @@ tip_percent = input("What percentage would you like to tip\n")
 people_count = input("How many people are splitting the bill\n")
 
 # tip calculation
-tip_amount=(float(tip_percent)/100)*float(total)
+tip_amount = (float(tip_percent)/100)*float(total)
 tip=tip_amount/float(people_count)
 
 print(f"Each person will pay {round(tip,2)} as tip")
