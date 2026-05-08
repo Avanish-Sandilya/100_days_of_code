@@ -1,9 +1,11 @@
+# Taking user inputs
 size = input("What size pizza do you want. S, M or L")
 pepperoni = input("Do you want pepperoni on your pizza y, n")
 cheese = input("Do you want extra cheese on your pizza. y, n")
 
 total = 0
 
+# Pizza size check
 if size == "s":
     total = 15
 elif size == "m":
@@ -11,8 +13,13 @@ elif size == "m":
 else:
     total = 25
 
+
 if pepperoni == "y":
-    total += 2
+    if size == 's':
+        total += 2
+    else:
+        total += 3
+
 
 if cheese == "y":
     total += 1
