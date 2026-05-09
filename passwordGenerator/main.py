@@ -10,6 +10,7 @@ numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 symbols = ['!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '-', '_', '+', '=']
 
+# taking user inputs
 password_length = int(input("How long you want the password to be"))
 letters_required = int(input("How many letters do you want in password"))
 numbers_required = int(input("How many numbers you need in the password"))
@@ -17,6 +18,7 @@ symbols_required = int(input("How many symbols you need in the password"))
 
 password = []
 
+# creating password list
 for _ in range(letters_required):
     password.append(random.choice(letters))
 
